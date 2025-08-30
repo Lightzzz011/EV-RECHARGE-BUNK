@@ -19,7 +19,7 @@ document.getElementById("addBunkForm")?.addEventListener("submit", async (e) => 
   const totalSlots = parseInt(document.getElementById("totalSlots").value);
 
   try {
-    // 🔹 Default coordinates for testing (Hyderabad)
+   
     const lat = 17.385044;
     const lng = 78.486671;
 
