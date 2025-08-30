@@ -1,21 +1,17 @@
-// Import Firebase core + services
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 
-// Your Firebase config
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyBA8ge2md8rnhJqW2aXRp9PTrO1i0T5tPM",
-  authDomain: "app-development-4a3b9.firebaseapp.com",
-  projectId: "app-development-4a3b9",
-  storageBucket: "app-development-4a3b9.appspot.com",
-  messagingSenderId: "969960725290",
-  appId: "1:969960725290:web:4fb7ef0df474e01fe49c53",
-  measurementId: "G-ZE6WYJHNE2"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-    
+
 export const auth = getAuth(app);
 export const db = getFirestore(app);
