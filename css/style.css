@@ -1,0 +1,43 @@
+/* Landing page */
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2f3640;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #718093;
+}
+
+.action-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #44bd32;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+a.btn:hover {
+  background-color: #2ecc71;
+}
+
+

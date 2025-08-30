@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - EV Recharge Bunk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <center>
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <select id="role">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select><br>
+    <button type="submit">Register</button>
+  </form>
+  <p id="registerMessage"></p>
+
+  <!-- ✅ Use ES modules instead of old script tags -->
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  </center>
+</body>
+</html>

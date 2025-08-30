@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - EV Recharge Bunk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>⚡ Admin Dashboard ⚡</h2>
+  <button id="logoutBtn">Logout</button>
+
+  <h3>Add New EV Bunk</h3>
+  <form id="addBunkForm">
+    <input type="text" id="bunkName" placeholder="Bunk Name" required><br>
+    <input type="text" id="bunkAddress" placeholder="Address" required><br>
+    <input type="text" id="bunkPhone" placeholder="Contact No." required><br>
+    <input type="number" id="totalSlots" placeholder="Total Slots" required><br>
+    <button type="submit">Add Bunk</button>
+  </form>
+  <p id="adminMessage"></p>
+
+  <h3>Manage Existing Bunks</h3>
+  <div id="bunkList"></div>
+
+  <!-- ✅ ES modules instead of old Firebase scripts -->
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

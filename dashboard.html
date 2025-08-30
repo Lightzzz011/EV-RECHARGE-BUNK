@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - EV Recharge Bunk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>🚗 User Dashboard</h2>
+  <button id="logoutBtn">Logout</button>
+
+  <h3>Search EV Bunks</h3>
+  <div id="map" style="height:300px;width:100%;border:1px solid #ccc;"></div>
+  <div id="bunkList"></div>
+
+  <!-- ✅ Use ES modules -->
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/user.js"></script>
+
+  <!-- Google Maps API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACOJqmzjAKOFcy0ebkB78WKgP6kbWrxks&callback=initMap"></script>
+</body>
+</html>
